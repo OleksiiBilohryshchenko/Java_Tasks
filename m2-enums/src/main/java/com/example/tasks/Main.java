@@ -1,39 +1,43 @@
 package com.example.tasks;
 
+import java.awt.desktop.AppForegroundListener;
 public class Main {
- System.out.println("How to access a constant");
+    public static void main(String[] args) {
 
-    Currency c = Currency.DIME;
+
+        System.out.println("How to access a constant");
+
+        Currency c = Currency.DIME;
         System.out.println(c);
         System.out.println(Currency.PENNY);
 
         System.out.println("How to get all constant");
-    Currency[] currencies = Currency.values();
+        Currency[] currencies = Currency.values();
 
         for(Currency currency : currencies){
-        System.out.println(currency);
-    }
+            System.out.println(currency);
+        }
 
         System.out.println("How to use switch-case with enums");
 
-    Currency myCurrency = Currency.QUARTER;
+        Currency myCurrency = Currency.QUARTER;
         switch(myCurrency){
-        case PENNY:
-            System.out.println("It is 1 cent");
-            break;
-        case NICKLE:
-            System.out.println("It is 5 cent");
-            break;
-        case DIME:
-            System.out.println("It is 10 cent");
-            break;
-        case QUARTER:
-            System.out.println("It is 25 cent");
-            break;
-    }
+            case PENNY:
+                System.out.println("It is 1 cent");
+                break;
+            case NICKLE:
+                System.out.println("It is 5 cent");
+                break;
+            case DIME:
+                System.out.println("It is 10 cent");
+                break;
+            case QUARTER:
+                System.out.println("It is 25 cent");
+                break;
+        }
 
         System.out.println("Operation Task");
-    calculate(3,5,Operation.PLUS);
+        calculate(3,5,Operation.PLUS);
 
 
         System.out.println("How top retrieve the constant value");
@@ -43,7 +47,7 @@ public class Main {
 
 
 
-}
+    }
 
     private static void calculate(double x, double y,Operation operation){
 
