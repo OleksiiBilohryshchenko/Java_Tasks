@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>m2-enums</module>
+        <module>m1-generics</module>
     </modules>
 
     <properties>
