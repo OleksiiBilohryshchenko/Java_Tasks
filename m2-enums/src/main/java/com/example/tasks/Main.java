@@ -43,7 +43,7 @@ public class Main {
         System.out.println("How top retrieve the constant value");
         System.out.println(Currency.PENNY.getValue());
         System.out.println(Currency.QUARTER.getValue());
-        System.out.println(Currency.QUARTER.ordinal());
+        System.out.println(Currency.QUARTER.ordinal()); // retrieve index
 
 
 
